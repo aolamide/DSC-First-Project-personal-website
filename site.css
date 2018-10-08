@@ -1,0 +1,134 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 100px;
+    padding: 0;
+    height: 100%;
+}
+.header {
+    padding: 1px;
+    background-image: url("images.png");
+    color: rgb(207, 33, 33);
+} 
+.header h1 {
+    font-size: 15px;
+    font-family:  sans-serif;
+}   
+.logohome{
+    text-decoration-style: none;
+}
+
+.logo{
+    border: 40px 40px;
+    border-radius: 30%;
+    border-color: palevioletred;
+    background-color: black;
+    color: rgb(207, 33, 33);
+}
+.navbar {
+    overflow:hidden;
+    background-color: #333;
+}
+a{
+    text-decoration: none;
+   
+}
+.navbar a:hover {
+    background-color:#1abc9c;
+    color: black;
+    
+}
+
+
+.navbar a,.dropdown {
+    float: left;
+    display: inline-block;
+    color: white;
+    
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+.dropdown {
+    float: right;
+}
+.dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #1abc9c;
+        padding: 0;
+        margin: 0;
+        overflow: hidden ;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+        color: black;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 10%;
+    
+}
+.dropdown:hover{
+    cursor: pointer;
+}
+.row { 
+    display: flex;
+    flex-wrap: wrap;
+}
+.side {
+    flex: 20%;
+    background-color: #f1f1f1; 
+    padding: 20px; 
+}
+.main p{
+    display: inherit;
+    margin: 100px 50px 0px 100px;
+    text-align: center;
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: 300;
+    color: #672930;
+    font-size: 40px;
+}
+
+
+.active{
+    background-color: white;
+    color: green;
+}
+
+
+.main { 
+    flex: 80%; 
+    background-color: white; 
+    padding: 0; 
+    display: inherit;
+    
+}
+
+.image{
+  float: right;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center; 
+    background: #ddd; 
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    
+}
